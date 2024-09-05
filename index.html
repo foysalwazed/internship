@@ -3,84 +3,267 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- font awsome  -->
-    <script src="https://kit.fontawesome.com/e965220e0e.js" crossorigin="anonymous"></script>
-    <!-- tailwind css  -->
+    <title>FurniFlex - Product Page</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
-            }
-          }
-        }
-      </script>
-
-      <!-- daisuUi  -->
-      <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-      <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    
+<body class="bg-gray-100">
 
-    <header>
+    <!-- Header Navigation -->
+    <header class="bg-white shadow-md p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="image/Logo.png" alt="">
+                
+            </div>
+            <nav class="flex space-x-6">
+                <a href="index.html" class="text-gray-600 hover:text-black">Home</a>
+                <a href="manucard.html" class="text-gray-600 hover:text-black">Products</a>
+                <a href="listcard.html" class="text-gray-600 hover:text-black">Categories</a>
+                <a href="index2.html" class="text-gray-600 hover:text-black">Custom</a>
+                <a href="index.html" class="text-gray-600 hover:text-black">Blog</a>
+            </nav>
+            <div class="flex space-x-4">
+                <a href="#" class="text-gray-600 hover:text-black">
+                    <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+          </svg>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </a>
+                <a href="#" class="text-gray-600 hover:text-black">
+
+                <img class="h-8 rounded"
+           
+            src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+        </div>
 
 
-        <div>
+                    
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
 
-            <div class="bg-gray-100">
-                <div class="flex min-h-screen">
-                    <!-- Left Side Form -->
-                    <div class="w-1/2 bg-white flex items-center justify-center p-12">
-                        <div class="w-full max-w-md">
-                            <h1 class="text-3xl font-bold mb-4 text-center">Welcome To <span class="text-blue-500">Furni<span class="text-gray-700">Flex</span></span></h1>
-                            <p class="text-center mb-6">Signup for purchase your desired products</p>
-                            
-                            <form action="#" class="space-y-4">
-                                <div class="flex space-x-2">
-                                    <input type="text" placeholder="First name (optional)" class="border border-gray-300 rounded-lg px-4 py-2 w-full">
-                                    <input type="text" placeholder="Last name (optional)" class="border border-gray-300 rounded-lg px-4 py-2 w-full">
-                                </div>
-                                <div>
-                                    <input type="email" placeholder="Email address" class="border border-gray-300 rounded-lg px-4 py-2 w-full">
-                                </div>
-                                <div>
-                                    <input type="password" placeholder="Password" class="border border-gray-300 rounded-lg px-4 py-2 w-full">
-                                </div>
-                                <div class="flex items-center">
-                                    <input type="checkbox" id="terms" class="mr-2">
-                                    <label for="terms" class="text-sm">I agree to the <a href="#" class="text-blue-500">Terms & Policy</a></label>
-                                </div>
-                                <button type="submit" class="bg-black text-white rounded-lg px-4 py-2 w-full">Signup</button>
-                            </form>
-            
-                            <div class="mt-6 flex items-center justify-between">
-                                <button class="bg-gray-100 text-gray-700 rounded-lg px-4 py-2 w-1/2 mr-2"> <i class=" fa-brands fa-google"></i>Sign in with Google</button>
-                                <button class="bg-gray-100 text-gray-700 rounded-lg px-4 py-2 w-1/2"> <i class="fa-brands fa-apple"></i> Sign in with Apple </button>
-                            </div>
-            
-                            <div class="mt-4 text-center">
-                                <p>Have an account? <a href="#" class="text-blue-500">Sign in</a></p>
+    <!-- Order Overview Section -->
+    <div class="max-w-7xl mx-auto py-10">
+        <div class="grid grid-cols-3 gap-6">
+
+            <!-- Left Column (Order Overview) -->
+            <div class="col-span-2 bg-white p-6 rounded-lg shadow-lg">
+                <h2 class="text-lg font-semibold mb-4">An overview of your order</h2>
+
+                <!-- Item 1 -->
+                <div class="flex justify-between items-center mb-4 border-b pb-4">
+                    <div class="flex items-center">
+                        <img src="image/Image.png" alt="Chair 1" class="h-16 w-16 rounded-lg">
+                        <div class="ml-4">
+                            <p class="text-gray-700">Recliner Chair Steel</p>
+                            <div class="flex items-center space-x-2">
+                                <button class="bg-gray-200 px-2 py-1 rounded">-</button>
+                                <span class="px-2">1</span>
+                                <button class="bg-gray-200 px-2 py-1 rounded">+</button>
                             </div>
                         </div>
                     </div>
-            
-                 
-<!-- Right Side -->
-<div class="w-1/2 bg-black text-white flex items-center justify-center bg-cover bg-center" style="background-image: url('image/chris-lee-70l1tDAI6rM-unsplash\ 1.png');">
-    <div class="text-center bg-black bg-opacity-50 p-6 rounded-lg">
-        <div class="mb-8">
-            <span class="bg-blue-500 text-white px-4 py-2 rounded-full text-2xl">F</span>
-        </div>
-        <h1 class="text-4xl font-bold mb-4">Furni<span class="text-blue-500">Flex</span></h1>
-        <p class="max-w-md">Discover a seamless shopping experience with our curated collection of products. From fashion to electronics, we bring quality.</p>
-    </div>
-</div>
+                    <p class="text-gray-800 font-bold text-lg ">€299.00</p>
+                    <button class="text-gray-500 hover:text-red-600"><i class="fas fa-times"></i></button>
+                </div>
 
+                <!-- Item 2 -->
+                <div class="flex justify-between items-center mb-4 border-b pb-4">
+                    <div class="flex items-center">
+                        <img src="image/Image (1).png" alt="Gaming Chair" class="h-16 w-16 rounded-lg">
+                        <div class="ml-4">
+                            <p class="text-gray-700">Gaming Chair</p>
+                            <div class="flex items-center space-x-2">
+                                <button class="bg-gray-200 px-2 py-1 rounded">-</button>
+                                <span class="px-2">1</span>
+                                <button class="bg-gray-200 px-2 py-1 rounded">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-800 font-bold text-lg">€249.00</p>
+                    <button class="text-gray-500 hover:text-red-600"><i class="fas fa-times"></i></button>
+                </div>
+
+                   <!-- Item 3 -->
+                   <div class="flex justify-between items-center mb-4 border-b pb-4">
+                    <div class="flex items-center">
+                        <img src="image/Image (3).png" alt="Gaming Chair" class="h-16 w-16 rounded-lg">
+                        <div class="ml-4">
+                            <p class="text-gray-700">Gaming Chair</p>
+                            <div class="flex items-center space-x-2">
+                                <button class="bg-gray-200 px-2 py-1 rounded">-</button>
+                                <span class="px-2">1</span>
+                                <button class="bg-gray-200 px-2 py-1 rounded">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-800 font-bold text-lg">€249.00</p>
+                    <button class="text-gray-500 hover:text-red-600"><i class="fas fa-times"></i></button>
+                </div>
+
+
+                   <!-- Item 4 -->
+                   <div class="flex justify-between items-center mb-4 border-b pb-4">
+                    <div class="flex items-center">
+                        <img src="image/Image (4).png" alt="Gaming Chair" class="h-16 w-16 rounded-lg">
+                        <div class="ml-4">
+                            <p class="text-gray-700">Gaming Chair</p>
+                            <div class="flex items-center space-x-2">
+                                <button class="bg-gray-200 px-2 py-1 rounded">-</button>
+                                <span class="px-2">1</span>
+                                <button class="bg-gray-200 px-2 py-1 rounded">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-800 font-bold text-lg">€249.00</p>
+                    <button class="text-gray-500 hover:text-red-600"><i class="fas fa-times"></i></button>
+                </div>
+
+                   <!-- Item 5 -->
+                   <div class="flex justify-between items-center mb-4 border-b pb-4">
+                    <div class="flex items-center">
+                        <img src="image/Image (5).png" alt="Gaming Chair" class="h-16 w-16 rounded-lg">
+                        <div class="ml-4">
+                            <p class="text-gray-700">Gaming Chair</p>
+                            <div class="flex items-center space-x-2">
+                                <button class="bg-gray-200 px-2 py-1 rounded">-</button>
+                                <span class="px-2">1</span>
+                                <button class="bg-gray-200 px-2 py-1 rounded">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-800 font-bold text-lg">€249.00</p>
+                    <button class="text-gray-500 hover:text-red-600"><i class="fas fa-times"></i></button>
+                </div>
+
+
+            
+            </div>
+
+            <!-- Right Column (Order Details) -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h2 class="text-lg font-semibold mb-4">Order details</h2>
+
+                <div class="space-y-4">
+                    <div class="flex justify-between">
+                        <p class="text-gray-600">Subtotal</p>
+                        <p class="text-gray-800">€1071.00</p>
+                    </div>
+                    <div class="flex justify-between">
+                        <p class="text-gray-600">Shipping</p>
+                        <p class="text-gray-800">Free</p>
+                    </div>
+                    <div class="flex justify-between">
+                        <p class="text-gray-600">Estimated Tax</p>
+                        <p class="text-gray-800">€-</p>
+                    </div>
+                    <div class="flex justify-between font-bold text-lg">
+                        <p>Total</p>
+                        <p>€1071.00</p>
+                    </div>
+                    <button class="bg-black text-white w-full py-3 rounded-lg mt-4">Go to Checkout</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+<footer>
+    <!-- footer -->
+
+
+    <footer>
+        <div class="bg-gray-900 text-white">
+
+            <!-- Footer Section -->
+            <footer class="bg-gray-900 text-gray-400 py-8">
+              <div class="container mx-auto px-4">
+                <div class="flex flex-col lg:flex-row justify-between items-start lg:items-start space-y-8 lg:space-y-0">
+                  
+                  <!-- Logo Section -->
+                  <div class="flex flex-col items-start">
+                    <img src="image/Logo.png" alt="FurniFlex Logo" class="mb-4 ">
+                    <span class="text-xl font-bold text-white">
+                    <div class="flex space-x-4 text-xl mt-4">
+                      <!-- Social Media Icons -->
+                      <a href="#" class="hover:text-brand"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#" class="hover:text-brand"><i class="fab fa-instagram"></i></a>
+                      <a href="#" class="hover:text-brand"><i class="fab fa-twitter"></i></a>
+                      <a href="#" class="hover:text-brand"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                  </div>
+          
+                  <!-- Links Section -->
+                  <div class="flex justify-between space-x-12">
+                    <div>
+                      <h4 class="text-white font-bold mb-4">About Us</h4>
+                      <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-brand">Master Plan</a></li>
+                        <li><a href="#" class="hover:text-brand">Jobs</a></li>
+                        <li><a href="#" class="hover:text-brand">Invest</a></li>
+                        <li><a href="#" class="hover:text-brand">Pressroom</a></li>
+                        <li><a href="#" class="hover:text-brand">Blog</a></li>
+                        <li><a href="#" class="hover:text-brand">Contact</a></li>
+                      </ul>
+                    </div>
+          
+                    <div>
+                      <h4 class="text-white font-bold mb-4">Explore EEVE</h4>
+                      <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-brand">Unlock my Robot Power</a></li>
+                        <li><a href="#" class="hover:text-brand">Starlight</a></li>
+                        <li><a href="#" class="hover:text-brand">Robot Platform</a></li>
+                        <li><a href="#" class="hover:text-brand">EEVE Roadmap</a></li>
+                      </ul>
+                    </div>
+          
+                    <div>
+                      <h4 class="text-white font-bold mb-4">Community & Support</h4>
+                      <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-brand">Willow X Community</a></li>
+                        <li><a href="#" class="hover:text-brand">Developer & Maker Access</a></li>
+                        <li><a href="#" class="hover:text-brand">Special Cases</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+          
+                <!-- Footer Bottom -->
+                <div class="mt-8 border-t border-gray-700 pt-6 flex flex-col lg:flex-row justify-between items-center text-sm">
+                  <div class="flex space-x-4">
+                    <a href="#" class="hover:text-brand">March22 Recap</a>
+                    <a href="#" class="hover:text-brand">Privacy Policy</a>
+                    <a href="#" class="hover:text-brand">General Terms</a>
+                    <a href="#" class="hover:text-brand">Contact</a>
+                  </div>
+                  <div class="mt-4 lg:mt-0 flex items-center space-x-4">
+                    <span class="text-gray-500">EEVE © 2024. All rights reserved.</span>
+                    <span class="flex items-center space-x-1">
+                      <img src="image/Logo.png">
+                      <span>United States (English)</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </footer>
+          
+            
+
+
+</footer>
 
 
 
